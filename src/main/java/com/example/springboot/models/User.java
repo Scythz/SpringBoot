@@ -18,7 +18,7 @@ public class User {
     private int id;
 
     @Column
-    @NotEmpty(message = "Имя не должно быть пустым")
+    @NotEmpty(message = "Имя не должно быть пустымvvv")
     @Size(min = 2, max = 20, message = "Имя должно быть от 2 до 20 знаков")
     private String name;
 
