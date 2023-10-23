@@ -31,6 +31,7 @@ public class UsersController {
 
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
+        System.out.println("И тут тоже NOOOOOOOOOOOOOOOOOOO");
         model.addAttribute("user", us.show(id));
         return "show";
     }
