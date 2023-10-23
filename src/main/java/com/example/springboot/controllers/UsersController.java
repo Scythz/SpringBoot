@@ -14,6 +14,7 @@ import javax.validation.Valid;
 @RequestMapping("/")
 public class UsersController {
 
+
     final UserService us;
 
     public UsersController(UserService us) {
@@ -23,6 +24,7 @@ public class UsersController {
 
     @GetMapping()
     public String index(Model model) {
+        System.out.println("NOOOOOOOOOOO");
         model.addAttribute("users", us.index());
         return "index";
     }
