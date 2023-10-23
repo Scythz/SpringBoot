@@ -19,7 +19,7 @@ public class User {
 
     @Column
     @NotEmpty(message = "Имя не должно быть пустымvvv")
-    @Size(min = 2, max = 20, message = "Имя должно быть от 2 до 20 знаков")
+    @Size(min = 2, max = 20, message = "Имя должно быть от 2 до 20 знаковАтут не должно откатиться")
     private String name;
 
     @Column
